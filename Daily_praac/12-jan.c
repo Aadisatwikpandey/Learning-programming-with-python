@@ -50,7 +50,7 @@ int* twoSum(int* nums, int numsSize, int target, int* returnSize) {
     * returnSize=2;
 
     for(int j=0;j<numsSize;j++){
-        for(int k=1;k<numsSize;k++){
+        for(int k=j+1;k<numsSize;k++){
             sum = nums[j]+nums[k];
             if (sum==target){
                 output[0]=j;
