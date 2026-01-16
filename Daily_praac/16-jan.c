@@ -96,3 +96,44 @@ bool checkIfExist(int* arr, int arrSize) {
     }
     return false;
 }
+
+
+// //question3:
+
+
+//solution
+double average(int* salary, int salarySize) {
+    double sum1=0,sum2=0;
+    
+    int min = salary[0];
+    int max=salary[0];
+    int count=0;
+    for(int i=0;i<salarySize;i++){
+        if(salary[i]>max){
+            max=salary[i];
+        }
+    }
+    for(int j=0;j<salarySize;j++){
+        if(salary[j]<min){
+            min=salary[j];
+        }
+    }
+    // for(int i=0;i<salarySize;i++){
+    //     if(salary[i]!=min || salary[i]!= max){
+    //         sum1+=salary[i];
+    //         count++;
+    //     }
+    // }
+    for(int k=0;k<salarySize;k++){
+        sum1 += salary[k];
+        count++;
+    }
+    count=count-2;
+    sum2= max+min;
+    sum1=sum1-sum2;
+    double result = sum1/count;
+    return result;
+
+}
+//learning:
+//Learnt about the use of float double and int size
