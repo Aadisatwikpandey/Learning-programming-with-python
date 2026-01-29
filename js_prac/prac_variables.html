@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The varibales page</title>
+    </head>
+    <body>
+        <p>
+            Card Quantity
+        </p>
+        <button onclick="console.log(`Card Quantity: ${cartQuantity}`)">Show Quantity</button>
+        <button onclick="cartQuantity+=1;console.log(`Card Quantity: ${cartQuantity}`)">Add to cart</button>
+        <button onclick="cartQuantity+=2;console.log(`Card Quantity: ${cartQuantity}`)">+2</button>
+        <button onclick="cartQuantity+=3;console.log(`Card Quantity: ${cartQuantity}`)">+3</button>
+        <button onclick="cartQuantity=0;console.log(`Card Quantity: ${cartQuantity}`)">Reset Cart</button>
+        <p>
+            Naming conventions<br>
+            camelCase;<br>
+            pascalcase;<br>
+            kebab-case;<br>
+            snake_case;<br>
+        </p>
+
+
+        <p>
+            There are 3 ways to create a varible<br>
+            1. const: used to create a constant, which means later the value of const can not be changed;<br>
+            2. var: var is used to create variable, but there are some problems in var, which is solved using the let;<br>
+            3. let: let works at the place of var in the new html code;<br>
+        </p>
+
+        <p>
+            typeof - this command is used to tell us the datatype of that variable
+        </p>
+
+
+        <h3>Calculator</h3>
+        <button onclick="calc+='1'">1</button>
+        <button onclick="calc+='2'">2</button>
+        <button onclick="calc+='3'">3</button>
+        <button onclick="calc+=' + '">+ </button>
+        <br>
+        <button onclick="calc+='4'">4</button>
+        <button onclick="calc+='5'">5</button>
+        <button onclick="calc+='6'">6</button>
+        <button onclick="calc+=' - '">-</button>
+        <br>
+        <button onclick="calc+='7'">7</button>
+        <button onclick="calc+='8'">8</button>
+        <button onclick="calc+='9'">9</button>
+        <button onclick="calc+=' * '">*</button>
+        <br>
+        <button onclick="calc+= '0'">0</button>
+        <button onclick="calc+='.'">.</button>
+        <button onclick="calc = eval(calc);console.log(calc)">=</button>
+        <button onclick="calc+=' / '">/</button>
+        <br>
+        <button onclick="calc = 0">Clear</button>
+
+
+
+
+
+        <script>
+            let cartQuantity = 0;
+            let calc= '';
+
+            let total = 0;
+
+
+
+
+
+
+        </script>
+    </body>
+</html>
