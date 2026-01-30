@@ -49,7 +49,20 @@
 
 
 
-        
+        <script>
+
+            const check = false ? 'truthy' : 'falsy';
+            console.log(check);
+
+            const result = false && console.log("Hello world"); // guard value
+
+            const result2 = true || console.log("this is false"); //Default Operator
+            console.log(result , result2);
+
+            /* The false in the check is the condition, the text truthy will be executed if the condition is true, or we can say it is the if condition, and the other value falsy is the else condition*/
+
+            /* If the first value is false, the operator stops there and doesnot even go to the next condition to check, this is called guard value */
+        </script>
 
     </body>
     
