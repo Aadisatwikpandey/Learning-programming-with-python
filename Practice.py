@@ -1,3 +1,5 @@
 # print("hello world")
 x=input("what is you name")
 print("Hello",x)
+print("This is a testing print for the repo sync function")
+print("I have to check if the real time sync function is working or not")
