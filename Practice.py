@@ -2,4 +2,5 @@
 x=input("what is you name")
 print("Hello",x)
 print("This is a testing print for the repo sync function")
-print("I have to check if the real time sync function is working or not")
+print("I see a bug in it ")
+print("The bug is that, it might be showing the stats incorrectly, specially the number of lines added and deleted")
